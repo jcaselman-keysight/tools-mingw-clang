@@ -4,7 +4,8 @@
         "path": "C:\\tools\\msys64\\usr\\bin\\bash.exe",
         "args": ["--login", "-i"],
         "env": {
-            "MSYSTEM": "MINGW64"
+            "MSYSTEM": "MINGW64",
+            "CHERE_INVOKING": "1"
             }
         }
     },

@@ -3,7 +3,7 @@
 iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
 # MSYS2, the work environment
-choco install -y msys2
+choco install -y msys2 git
 
 # Install Ansible
 C:\tools\msys64\usr\bin\bash --login -c 'pacman -S --needed --noconfirm ansible'
