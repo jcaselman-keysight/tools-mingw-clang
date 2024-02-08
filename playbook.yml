@@ -17,6 +17,10 @@
       - mingw-w64-x86_64-icu
       - mingw-w64-x86_64-openjpeg2
       - mingw-w64-x86_64-libobjc2
+      - mingw-w64-x86_64-gnustep-make
+      - mingw-w64-x86_64-gnustep-base
+      - mingw-w64-x86_64-gnustep-gui
+      - mingw-w64-x86_64-gnustep-back
 
   - name: Create ~/pkg directory
     ansible.builtin.file:
