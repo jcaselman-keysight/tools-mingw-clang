@@ -2,6 +2,10 @@
 # [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;
 iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
+# download gitlab-runner
+New-Item -Path "C:\" -Name "GitLab-Runner" -ItemType "directory"
+Invoke-WebRequest "https://s3.dualstack.us-east-1.amazonaws.com/gitlab-runner-downloads/latest/binaries/gitlab-runner-windows-amd64.exe" -Outfile "C:\Gitlab-Runner\gitlab-runner.exe"
+
 # MSYS2, the work environment
 choco install -y msys2 git
 
