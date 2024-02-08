@@ -21,6 +21,8 @@
       - mingw-w64-x86_64-gnustep-base
       - mingw-w64-x86_64-gnustep-gui
       - mingw-w64-x86_64-gnustep-back
+      - bison
+      - flex
 
   - name: Create ~/pkg directory
     ansible.builtin.file:
