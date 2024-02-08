@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
   end
 
   config.vm.synced_folder ".", "/vagrant", disabled: true
-  config.vm.provision "file", source: "./playbook.yml", destination: "/vagrant/"
+  config.vm.provision "file", source: ".", destination: "/vagrant/"
 
   config.vm.provision "shell", path: "install.ps1"
 end
