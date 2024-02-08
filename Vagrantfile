@@ -6,8 +6,8 @@ Vagrant.configure("2") do |config|
     v.cpus = 4
     v.name = "tools-mingw-clang-#{Time.now.to_i}"
   end
-  # Synced folder configuration
-  config.vm.synced_folder "/home/caselman/code", "/vagrant_code", type: "virtualbox"
+
+  config.vm.synced_folder ".", "/vagrant", disabled: true
 
   config.vm.provision "shell", path: "install.ps1"
 end
